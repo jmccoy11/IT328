@@ -1,0 +1,12 @@
+[submodule "blogs"]
+	path = blogs
+	url = https://github.com/jmccoy11/blogs.git
+[submodule "new-project"]
+	path = new-project
+	url = https://github.com/jmccoy11/new-project.git
+[submodule "mypets-templating-starter"]
+	path = mypets-templating-starter
+	url = https://github.com/jmccoy11/mypets-templating-starter.git
+[submodule "js-intro"]
+	path = js-intro
+	url = https://github.com/jmccoy11/js-intro.git
