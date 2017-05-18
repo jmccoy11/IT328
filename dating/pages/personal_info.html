@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <!--
+      Author: Jonnathon McCoy
+      Filename: personal_info.html
+      Description: HTML Form to retrieve personal information from user
+  -->
+  
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/heart-icon.png">
+    <title>Personal Information</title>
+    <meta name="description" content="Mock dating site for Green River College class IT328">
+    <meta name="author" content="Jonnathon McCoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+    
+    <!--Custom stylesheets -->
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./">My Dating Website</a>
+        </div>
+        <div class="navbar-header pull-right">
+          <a class="navbar-brand" href="./admin">Admin Login</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row panel panel-default content">
+        <div class="panel-heading">
+          <h1><strong>Personal Information</strong></h1>
+        </div>
+      
+        <div class="row panel-body">
+            <form method="POST" action="./profile" onsubmit="return validate();">
+              <div id="form" class="col-sm-8">
+                
+                  <!-- First Name -->
+                <div class="form-group">
+                  <label for="firstName">First Name</label><span id='firstNameErr' class='error'>&nbsp; &nbsp; * Required</span>
+                  <input id="firstName" name="firstName" type="text" class="form form-control" tabindex=1>
+                </div>
+              
+                  <!-- Last Name -->
+                <div class="form-group">
+                  <label for="lastName">Last Name</label><span id='lastNameErr' class='error'>&nbsp; &nbsp; * Required</span>
+                  <input id="lastName" name="lastName" type="text"  class="form form-control" tabindex=2>
+                </div>
+                
+                  <!-- Age -->
+                <div class="form-group">
+                  <label for="age">Age</label><span id='ageErr' class='error'>&nbsp; &nbsp; * Required</span>
+                  <input id="age" name="age" type="text"  class="form form-control" tabindex=3>
+                </div>
+                
+                  <!-- Gender -->
+                <div class="form-group">
+                  <label>Gender</label> <br />
+                  <input id="genderMale" name="gender" type="radio" value="Male" checked='checked' tabindex=4> &nbsp; Male &nbsp; &nbsp;
+                  <input id="genderFemaile" name="gender" type="radio" value="Female"> &nbsp; Female <br />  
+                </div>
+                
+                  <!-- Phone Number -->
+                <div class="form-group">
+                  <label for="phoneNumber">Phone Number</label><span id='phoneNumberErr'>&nbsp; &nbsp; * Only numbers or leave blank</span>
+                  <input id="phoneNumber" name="phoneNumber" type="text" class="form form-control" tabindex=5>
+                </div>
+              </div>
+              
+              <div id="disclaimer" class="col-sm-4 center">
+                <strong>Note: </strong> All information entered is protected by our <a href="#">privacy policy</a>.
+                  Profile information can be viewed by others with your permission.
+              </div>
+              
+              <div class="row col-sm-12">
+                <!-- Premium Membership -->
+                <div id="premium-div">
+                  <label for="premium">Premium Membership</label><br />
+                  <input id="premium" name="premium" type="checkbox" tabindex=6>
+                  <label class="normal-text" for="premium">Sign me up for a Premium Account!</label>
+                </div>
+                
+                <!-- Submit Button -->
+                <input id="next" type='submit' value="Next >" class="btn btn-primary" tabindex=7>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- jQuery JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/mccoy-dating-custom.js"></script>
+    <script>
+      /**
+       * Validates that fields that should have validation have proper input.
+       *
+       * @returns {Boolean} If all fields are valid, return true, else return false
+       * and the user stays on the current page.
+       */
+      function validate()
+      {
+        var valid = true;
+        
+        firstNameValid = validateFirstName();
+        lastNameValid = validateLastName();
+        ageValid = validateAge();
+        phoneValid = validatePhone();
+        
+        if(firstNameValid != true ||
+           lastNameValid != true ||
+           ageValid != true ||
+           phoneValid != true)
+        {
+          valid = false;
+        }
+        
+        return valid;
+      } //validate()
+    </script>
+    
+  </body>
+</html>
+

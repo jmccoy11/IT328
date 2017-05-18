@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <!--
+      Author: Jonnathon McCoy
+      Filename: home.html
+      Description: Mock dating site for Green River College class IT328
+  -->
+  
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/heart-icon.png">
+    <title>The Dating Site</title>
+    <meta name="description" content="Mock dating site for Green River College class IT328">
+    <meta name="author" content="Jonnathon McCoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!--Custom stylesheets -->
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./">My Dating Website</a>
+        </div>
+        <div class="navbar-header pull-right">
+          <a class="navbar-brand" href="./admin">Admin Login</a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="page" class="container-fluid">
+      <div class="row content">
+        <div id="text" class="col-md-6">
+          <h1 class="center"><strong>The Dating Site</strong></h1>
+      
+          <p>Welcome to the web's most successful dating website. At <strong>My Dating Site</strong> you'll meet other like-minded individuals. We have the highest success rate of couples on the web. User's are matched by interest and location. Find out why so many others have found love on our site!</p>
+          
+          <h3 class="center"><strong>Hear what our users are saying about us.</strong></h3>
+          
+          <blockquote id="quotes">
+            <em>"I met the love of my life after only a month!" -Andrea</em>
+            <br /><br />
+            <em>"It was so easy to set up and profile and start meeting people. I didn't realize how many others were looking for love in my area." -John Smith</em>
+            <br /><br />
+            <em>"Just try it! You'll never be the same!" -Sarah</em>
+          </blockquote>
+          
+          <form method="GET" action="./personal_info">
+            <input id="create" type='submit' value="Create a Profile!" class="btn btn-primary center-block">
+          </form>
+        </div>
+        
+        <div id="dating-image" class="col-md-6">
+          <img class="img-responsive img-rounded center-block" src="images/lovebots-medium.png" alt="lovebots image"/>
+        </div>
+      </div>
+    </div>
+    
+    <!-- jQuery JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
+

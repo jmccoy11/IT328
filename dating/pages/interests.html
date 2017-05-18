@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <!--
+      Author: Jonnathon McCoy
+      Filename: interests.html
+      Description: HTML Form to retrieve indoor and outdoor interests from user
+  -->
+  
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/heart-icon.png">
+    <title>Interests</title>
+    <meta name="description" content="Mock dating site for Green River College class IT328">
+    <meta name="author" content="Jonnathon McCoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!--Custom stylesheets -->
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./">My Dating Website</a>
+        </div>
+        <div class="navbar-header pull-right">
+          <a class="navbar-brand" href="./admin">Admin Login</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row panel panel-default content">
+        <div class="header panel-heading">
+          <h1><strong>Interests</strong></h1>
+        </div>
+      
+        <div class="panel-body">
+          <form method="POST" action="./profile_summary">
+            
+            <h5><strong>Indoor Interests</strong></h5>
+          
+          <div class="row indent">
+            <div class="col-sm-3">
+              <input id="tv" type="checkbox" name="indoor[]" value="TV" tabindex=1>
+                <label class="normal-text" for="tv"> &nbsp; tv</label><br />
+              <input id="puzzles" type="checkbox" name="indoor[]" value="puzzles" tabindex=2>
+                <label class="normal-text" for="puzzles"> &nbsp; puzzles</label><br />
+            </div>
+            
+            <div class="col-sm-3">
+              <input id="movies" type="checkbox" name="indoor[]" value="movies" tabindex=3>
+                <label class="normal-text" for="movies"> &nbsp; movies</label><br />
+              <input id="reading" type="checkbox" name="indoor[]" value="reading" tabindex=4>
+                <label class="normal-text" for="reading"> &nbsp; reading</label><br />
+            </div>
+            
+            <div class="col-sm-3">
+              <input id="cooking" type="checkbox" name="indoor[]" value="cooking" tabindex=5>
+                <label class="normal-text" for="cooking"> &nbsp; cooking</label><br />
+              <input id="playing cards" type="checkbox" name="indoor[]" value="playing cards" tabindex=6>
+                <label class="normal-text" for="playing cards"> &nbsp; playing cards</label><br />
+            </div>
+            
+            <div class="col-sm-3">
+              <input id="board games" type="checkbox" name="indoor[]" value="board games" tabindex=7>
+                <label class="normal-text" for="board games"> &nbsp; board games</label><br />
+              <input id="video games" type="checkbox" name="indoor[]" value="video games" tabindex=8>
+                <label class="normal-text" for="video games"> &nbsp; video games</label><br />
+            </div>
+          </div>
+          
+            <h5><strong>Outdoor Interests</strong></h5>
+          
+          <div class="row indent">
+            <div class="col-sm-3">
+              <input id="hiking" type="checkbox" name="outdoor[]" value="hiking" tabindex=9>
+                <label class="normal-text" for="hiking"> &nbsp; hiking</label><br />
+              <input id="walking" type="checkbox" name="outdoor[]" value="walking" tabindex=10>
+                <label class="normal-text" for="walking"> &nbsp; walking</label><br />
+            </div>
+            
+            <div class="col-sm-3">
+              <input id="biking" type="checkbox" name="outdoor[]" value="biking" tabindex=11>
+                <label class="normal-text" for="biking"> &nbsp; biking</label><br />
+              <input id="climbing" type="checkbox" name="outdoor[]" value="climbing" tabindex=12>
+                <label class="normal-text" for="climbing"> &nbsp; climbing</label><br />
+            </div>
+            
+            <div class="col-sm-3">
+              <input id="swimming" type="checkbox" name="outdoor[]" value="swimming" tabindex=13>
+                <label class="normal-text" for="swimming"> &nbsp; swimming</label><br />
+            </div>
+            
+            <div class="col-sm-3">
+              <input id="collecting" type="checkbox" name="outdoor[]" value="collecting" tabindex=14>
+                <label class="normal-text" for="collecting"> &nbsp; collecting</label><br />
+            </div>
+          </div>
+          
+              <!-- Submit Button -->
+            <div class="row col-sm-12">
+              <input id="next" type='submit' value="Next >" class="btn btn-primary" tabindex=15>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

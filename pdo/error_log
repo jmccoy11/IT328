@@ -1,0 +1,79 @@
+[25-Apr-2017 21:01:49 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/jmccoy/public_html/328/pdo/index.php on line 4
+[25-Apr-2017 21:02:42 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/jmccoy/public_html/328/pdo/index.php on line 4
+[25-Apr-2017 21:02:45 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/jmccoy/public_html/328/pdo/index.php on line 4
+[25-Apr-2017 21:26:55 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/jmccoy/public_html/328/pdo/index.php on line 7
+[25-Apr-2017 21:27:36 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/jmccoy/public_html/328/pdo/index.php on line 7
+[25-Apr-2017 21:27:42 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/jmccoy/public_html/328/pdo/index.php on line 7
+[25-Apr-2017 21:28:12 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/jmccoy/public_html/328/pdo/index.php on line 7
+[25-Apr-2017 21:29:15 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/jmccoy/public_html/328/pdo/index.php on line 7
+[25-Apr-2017 21:30:43 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/jmccoy/public_html/328/pdo/index.php on line 7
+[25-Apr-2017 21:31:52 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/jmccoy/public_html/328/pdo/index.php on line 7
+[25-Apr-2017 21:32:11 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function bindParam() on null in /home/jmccoy/public_html/328/pdo/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 24
+[25-Apr-2017 21:32:38 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function bindParam() on null in /home/jmccoy/public_html/328/pdo/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 26
+[25-Apr-2017 21:41:33 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function lastInsertID() on null in /home/jmccoy/public_html/328/pdo/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 42
+[25-Apr-2017 21:41:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function lastInsertId() on null in /home/jmccoy/public_html/328/pdo/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 42
+[25-Apr-2017 22:01:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/jmccoy/public_html/328/pdo/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 51
+[25-Apr-2017 22:10:56 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/jmccoy/public_html/328/pdo/index.php on line 54
+[25-Apr-2017 22:11:07 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/jmccoy/public_html/328/pdo/index.php on line 54
+[25-Apr-2017 22:11:10 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/jmccoy/public_html/328/pdo/index.php on line 54
+[25-Apr-2017 22:11:18 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/jmccoy/public_html/328/pdo/index.php on line 54
+[27-Apr-2017 08:36:57 America/Chicago] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/jmccoy/public_html/328/pdo/index.php on line 57
+[27-Apr-2017 08:36:57 America/Chicago] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/jmccoy/public_html/328/pdo/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 67
+[28-Apr-2017 02:05:49 America/Chicago] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/jmccoy/public_html/328/pdo/index.php on line 57
+[28-Apr-2017 02:05:49 America/Chicago] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/jmccoy/public_html/328/pdo/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 67
+[01-May-2017 19:03:27 America/Chicago] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/jmccoy/public_html/328/pdo/index.php on line 57
+[01-May-2017 19:03:27 America/Chicago] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/jmccoy/public_html/328/pdo/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 67
+[05-May-2017 21:49:16 America/Chicago] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/jmccoy/public_html/328/pdo/index.php on line 57
+[05-May-2017 21:49:16 America/Chicago] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/jmccoy/public_html/328/pdo/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 67
+[07-May-2017 10:27:21 America/Chicago] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/jmccoy/public_html/328/pdo/index.php on line 57
+[07-May-2017 10:27:21 America/Chicago] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/jmccoy/public_html/328/pdo/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 67
+[09-May-2017 04:21:42 America/Chicago] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/jmccoy/public_html/328/pdo/index.php on line 57
+[09-May-2017 04:21:42 America/Chicago] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/jmccoy/public_html/328/pdo/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 67
+[09-May-2017 19:35:24 America/Chicago] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/jmccoy/public_html/328/pdo/index.php on line 57
+[09-May-2017 19:35:24 America/Chicago] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/jmccoy/public_html/328/pdo/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 67
+[13-May-2017 10:28:08 America/Chicago] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/jmccoy/public_html/328/pdo/index.php on line 57
+[13-May-2017 10:28:08 America/Chicago] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/jmccoy/public_html/328/pdo/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 67
+[14-May-2017 21:00:57 America/Chicago] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/jmccoy/public_html/328/pdo/index.php on line 57
+[14-May-2017 21:00:58 America/Chicago] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/jmccoy/public_html/328/pdo/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/jmccoy/public_html/328/pdo/index.php on line 67

@@ -1,0 +1,95 @@
+/*
+ * Author: Jonnathon McCoy
+ * Filename: styles.css
+ * Description: Page styles for My Dating Website
+ */
+
+/* Element styles */
+    blockquote {
+        border-top: solid 2px #e3e5e8;
+        border-bottom: solid 2px #e3e5e8;
+        border-left: none;
+    }
+    
+/* Class styles */
+    .panel-default>.panel-heading {
+        background-image: none;
+        background-color: white;
+    }
+    
+    .content {
+        margin: 0px 50px 0px 50px;
+        padding: 10px 50px 10px 50px;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    .indent {
+        margin-left: 15px;
+    }
+    
+    .error {
+        color: red;
+    }
+    
+    .success {
+        color: green;
+    }
+    
+    .normal-text {
+        font-weight: normal;
+    }
+
+/* Id styles */
+    #contactme {
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+    
+    #content {
+        padding-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    #create {
+        font-size: 1.5em;
+        padding: 10px 15px 10px 15px;
+        border-radius: 5px;
+    }
+    
+    #disclaimer {
+        font-size: 1.25em;
+        border: solid 2px #e3e5e8;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 25px 0 0 0;
+        background-color: rgba(227, 229, 232, 0.5);
+    }
+    
+    #form {
+        padding-right: 40px;
+    }
+    
+    #next {
+        margin-top: 1em;
+        float: right;
+    }
+    
+    #biography {
+        border: solid 1px #ccc;
+        border-radius: 10px;
+    }
+    
+    #summary p {
+        border: solid 1px #ccc;
+        padding: 10px;
+        margin: -1px;
+    }
+    
+    #premium-div {
+        padding-left: 15px;
+    }
+    
+    

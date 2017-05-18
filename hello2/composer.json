@@ -1,0 +1,14 @@
+{
+    "name":"jmccoy/hello2",
+    "authors":
+    [
+        {
+            "name":"Jonnathon McCoy",
+            "email":"jmccoy11@mail.greenriver.edu"
+        }
+    ],
+    "require":
+    {
+        "bcosca/fatfree-core":"dev-master"
+    }
+}
